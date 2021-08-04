@@ -8,6 +8,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/validador.js"></script>
 
   <title>Frontend Mentor | Intro component with sign up form</title>
 
@@ -26,26 +27,36 @@
     <div class="registro">
       <div class="registro__price"><span class="white">Try it free 7 days</span> then $20/mo. thereafter</div>
       <div class="registro__form">
-        <form action="" class="form">
-          <input type="text" class="firtsname" name="firstname"  placeholder="First Name" src="images/icon-error.svg">
-          <input type="text" class="lastname" name="lastname"placeholder="Last Name" src="images/icon-error.svg">
-          <input id="email" class="email" type="text" name="email"  placeholder="Email Address" src="images/icon-error.svg">
-          <input type="password" class="password" name="password" placeholder="Password" src="images/icon-error.svg">
-          
-        </form>
-        <div class="boton"><button> Claim your free trial</button></div>
+        <form method="GET" action="" class="form">
+          <input id="firstname" type="text" class="firtsname" name="firstname" placeholder="First Name">
+          <div class="msnerror"><i> First Name canont be empty</i></div>
+          <input id="lastmane" type="text" class="lastname" name="lastname" placeholder="Last Name">
+          <div class="msnerror"><i> Last Name canont be empty</i></div>
+          <input id="email" class="email" type="text" name="email" placeholder="Email Address"
+            src="images/icon-error.svg">
+            <div id="idmsnerror" class="msnerror"><i>Looks like this is not an email </i></div>
+          <input id="password" type="password" class="password" name="password" placeholder="Password">
+          <div class="msnerror"><i>Password canont be empty</i></div>
 
-        <div class="registro__terminos">By clicking the button, you are agreeing to our Terms and Services</div>
+          <button type="submit" onclick="validarcorreo(form.email.value)"> Claim your free trial</button>
+          <div class="registro__terminos">By clicking the button, you are agreeing to our <span class="red">Terms and
+              Services</span></div>
       </div>
-    </div>
 
-    <footer>
-      <p class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by <a href="#">Your Name Here</a>.
-      </p>
-    </footer>
+      </form>
+
+
+    </div>
+  </div>
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer>
   </div>
 </body>
+
 
 </html>

@@ -8,68 +8,127 @@ body {
     background-image: url(../images/bg-intro-desktop.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: hsl(0, 100%, 74%) ;
-   
+    background-color: hsl(0, 100%, 74%);
+
 }
-.continer{
+
+.continer {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100vh;
 }
-.information{
+
+.information {
     color: hsl(0, 0%, 100%);
 }
-.tittle{
+
+.tittle {
     font-size: 3em;
     max-width: 500px;
 }
-.estracto{
+
+.estracto {
     max-width: 550px;
 }
-.registro__form{
+
+.registro__form {
     max-width: 550px;
     margin-top: 0px;
     text-align: center;
     padding-top: 30px;
     border-radius: 10px;
-    box-shadow: 0px 8px 0px 0px rgba(77, 76, 76, 0.315); 
-    color: hsl(249, 10%, 26%) ;
+    box-shadow: 0px 8px 0px 0px rgba(77, 76, 76, 0.315);
+    color: hsl(249, 10%, 26%);
 }
 
-form input{
-    border: solid 1px hsl(249, 10%, 26%) ;
-    width: 430px;
-    margin:7px;
-    padding: 20px 20px 20px 30px;
+form input {
+    border: solid 1px hsl(246, 25%, 77%);
+    width: 410px;
+    margin: 10px;
+    padding: 17px 17px 17px 30px;
     border-radius: 10px;
     font-size: 0.9em;
     font-weight: 600;
-    color: hsl(249, 10%, 26%) ;
+    color: hsl(249, 10%, 26%);
     outline: none;
 }
-form input:focus{
-    border: solid 2px hsl(248, 32%, 49%);
+
+form input:focus {
+    border: solid 1px hsl(248, 32%, 49%);
+    font-weight: 700;
 }
-.registro__price{
-    padding: 17px 100px;
+
+.registro__price {
+    padding: 17px 115px;
     background-color: hsl(248, 32%, 49%);
     color: hsl(0, 0%, 100%);
     border-radius: 10px;
     margin-bottom: 30px;
-    box-shadow: 0px 8px 0px 0px rgba(77, 76, 76, 0.315); 
+    box-shadow: 0px 8px 0px 0px rgba(77, 76, 76, 0.315);
 }
-.white{
+
+.white {
     font-weight: 600;
 }
-.registro__form{
+
+.registro__form {
     background-color: hsl(0, 0%, 100%);
 }
-footer{
+
+button {
+    border: none;
+    background-color: hsl(154, 59%, 51%);
+    padding: 20px 145px;
+    border-radius: 10px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    box-shadow: inset 0px -4px 0px 0px rgba(77, 76, 76, 0.212);
+    cursor: pointer;
+}
+
+.registro__terminos {
+    font-size: 0.7em;
+    margin-top: 20px;
+    padding-bottom: 30px;
+    color: hsl(246, 25%, 77%);
+}
+
+.red {
+    color: hsl(0, 100%, 74%);
+    font-weight: 600;
+}
+
+/*Class for error*/
+.error {
+    border: solid 2px hsl(0, 100%, 74%);
+    background-image: url(../images/icon-error.svg);
+    background-repeat: no-repeat;
+    background-position: 95%;
+}
+
+.msnerror {
+    display: none;
+    font-size: 0.8em;
+    color: hsl(0, 100%, 74%);
+    text-align: end;
+    padding-right: 35px;
+    margin-bottom: 5px;
+}
+
+.active{
+    display: block;
+}
+
+footer {
     position: absolute;
     bottom: 30px;
 }
+
 .attribution {
     font-size: 11px;
     text-align: center;
