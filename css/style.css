@@ -27,10 +27,12 @@ body {
 .tittle {
     font-size: 3em;
     max-width: 500px;
+    padding: 0 20px;
 }
 
 .estracto {
     max-width: 550px;
+    padding: 0 20px;
 }
 
 .registro__form {
@@ -67,6 +69,7 @@ form input:focus {
     border-radius: 10px;
     margin-bottom: 30px;
     box-shadow: 0px 8px 0px 0px rgba(77, 76, 76, 0.315);
+    text-align: center;
 }
 
 .white {
@@ -120,20 +123,156 @@ button {
     margin-bottom: 5px;
 }
 
-.active{
+.active {
     display: block;
 }
 
-footer {
-    position: absolute;
-    bottom: 30px;
-}
 
 .attribution {
     font-size: 11px;
+    position: absolute;
+    bottom: 30px;
     text-align: center;
+    left: 40%;
+    transform: perspective(-50%, 50%);
+
 }
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+/*Responsive*/
+
+@media (max-width:1024px) {
+   
+
+    .continer {
+        flex-direction: column;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        height: 100%;
+    }
+
+    .attribution {
+        margin-top: 30px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        left: 0%;
+    }
+
+    .information {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .registro__price {
+        padding: 17px 115px;
+        background-color: hsl(248, 32%, 49%);
+        color: hsl(0, 0%, 100%);
+        border-radius: 10px;
+        margin-bottom: 30px;
+        box-shadow: 0px 8px 0px 0px rgba(77, 76, 76, 0.315);
+    }
+}
+
+@media (max-width:700px) {
+
+    .continer {
+        margin-top: 50px;
+        margin-bottom: 0px;
+    }
+    .estracto{
+        margin-top: 0;
+        margin-bottom: 20px;
+        padding: 0 30px;
+    }
+
+    .registro__price {
+        padding: 17px;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .registro__form {
+        max-width: 450px;        
+    }
+    form input {
+        width: 350px;
+        margin: 10px;  
+    }
+    button {
+        border: none;
+        background-color: hsl(154, 59%, 51%);
+        padding: 20px 105px;
+    }
+    .tittle{
+        font-size: 2em;
+    }
+}
+
+@media (max-width:500px) {
+    .tittle{
+        font-size: 1.5em;
+        max-width: 280px;
+    }
+    .registro__price {
+        padding: 17px;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .registro__form {
+        max-width: 380px;     
+        padding-top: 20px;   
+    }
+    form input {
+        width: 290px;
+        margin: 10px;  
+    }
+    button {
+        border: none;
+        background-color: hsl(154, 59%, 51%);
+        padding: 20px 75px;
+    }
+    .registro__terminos {
+        max-width: 250px;
+        margin: auto;
+        margin-top: 10px;
+        padding-bottom:20px ;
+    }
+}
+
+@media (max-width:420px) {
+    .estracto{
+        padding: 0 30px;
+    }
+    .registro__price {
+        box-sizing: border-box;
+        padding: 17px 50px;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        text-align: center;
+        max-width: 330px;
+    }
+    .registro__form {
+        max-width: 330px;        
+    }
+    form input {
+        width: 230px;
+        margin: 10px;  
+    }
+    button {
+        border: none;
+        background-color: hsl(154, 59%, 51%);
+        padding: 20px 45px;
+    }
+    .attribution {
+        padding-top: 50px;
+    }
 }
