@@ -27,7 +27,7 @@
     <div class="registro">
       <div class="registro__price"><span class="white">Try it free 7 days</span> then $20/mo. thereafter</div>
       <div class="registro__form">
-        <form method="GET" action="" class="form">
+        <form method="GET" action="" class="form" onchange="validarcorreo()">
           <input id="firstname" type="text" class="firtsname" name="firstname" placeholder="First Name">
           <div class="msnerror"><i> First Name canont be empty</i></div>
           <input id="lastmane" type="text" class="lastname" name="lastname" placeholder="Last Name">
@@ -38,7 +38,7 @@
           <input id="password" type="password" class="password" name="password" placeholder="Password">
           <div class="msnerror"><i>Password canont be empty</i></div>
 
-          <button type="submit" onclick="validarcorreo(form.email.value)"> Claim your free trial</button>
+          <button type="submit" onclick="validarcorreo()"> Claim your free trial</button>
           <div class="registro__terminos">By clicking the button, you are agreeing to our <span class="red">Terms and
               Services</span></div>
       </div>
